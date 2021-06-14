@@ -23,7 +23,8 @@
     border-radius: 5px;
     color: lightblue;
   }
-  button {
+  button 
+  {
     padding: 10px;
     background: rgb(67, 178, 252);
     text-shadow: 1px 1px 1px #202020;
