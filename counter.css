@@ -42,7 +42,8 @@ body {
   h5{
     color: #fff;
   }
-  button {
+  button 
+  {
     padding: 20px;
     background: #fff;
     text-shadow: 1px 1px 1px #202020;
