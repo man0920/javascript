@@ -1,0 +1,62 @@
+body {
+        background-image:url('bg.jpg');
+        background-size: cover;
+     }
+   h1
+   { 
+        color:#b18c63;
+        text-align: center;
+        font-family: 'Courier New', Courier, monospace;
+   }
+   .container 
+   {
+      width: 80%;
+     max-width: 600px;
+     margin: 50px auto;
+   }
+
+    button.accordion 
+    {
+        width: 100%;
+        font-family: 'Courier New', Courier, monospace;
+        background-color: whitesmoke;
+        border: none;
+        outline: none;
+        text-align: left;
+        padding: 15px 20px;
+        font-size: 20px;
+        color: #333;
+        cursor: pointer;
+        transition: background-color 0.2s linear;
+      }
+   button.accordion:after 
+   {
+     content: '\f055';
+     font-family: "fontawesome";
+     font-size: 14px;
+     float: right;
+   }
+    
+   button.accordion.is-open:after
+    {
+     content: '\f056';
+    }
+    
+   button.accordion:hover, button.accordion.is-open 
+   {
+     background-color: #b18c63;
+     color:#fff;
+     border: 2px solid white;
+   }
+    
+   .accordion-content
+    {
+     background-color: rgb(240, 226, 210);
+     border-left: 1px solid whitesmoke;
+     border-right: 1px solid whitesmoke;
+     font-family:monospace;
+     padding: 0 20px;
+     max-height: 0;
+     overflow: hidden;
+     transition: max-height 0.2s ease-in-out;
+   }

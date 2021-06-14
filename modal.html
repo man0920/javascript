@@ -1,0 +1,62 @@
+<html>
+    <head>
+        <title>Modal</title>
+        <link rel="stylesheet" href="modal.css">
+    </head>
+    <body>
+        <main>
+  <h1>MODAL WITH PURE JAVASCRIPT</h1>
+  <button class="open-modal modal-1">HOW TO USE</button>
+  <button class="open-modal modal-2">SAMPLE MODAL</button>
+  
+  <!-- First Modal -->
+  
+  <div class="modal-content modal_1">
+    <div class="modal-body">
+      <h3>To show</h3>
+      <code>new Modal(button, {
+              content: '.modal_1'
+            }).open();</code>
+      <br/>
+      <h3>To hide</h3>
+      <code>new Modal(b1, {
+              content: '.modal_1'
+            }).close();</code>
+      <h3>Skeleton</h3>
+      <pre>
+&ltdiv class="modal-content el"&gt
+  &ltdiv class="modal-header"&gt
+    &ltspan class="close-modal"&gt&times&lt/span&gt
+  &lt/div&gt 
+  &ltdiv class="modal-body"&gt
+    ...
+  &lt/div&gt 
+  &ltdiv class="modal-footer"&gt
+    &ltbutton class="close-modal"&gtClose&lt/button&gt
+    &ltbutton class="confirm-modal"&gtOK&lt/button&gt
+  &lt/div&gt 
+&lt/div&gt
+      </pre>
+    </div>
+    <div class="modal-footer">
+      <button class="close-modal">Close</button>
+      <button class="close-modal">OK</button>
+    </div>
+  </div>
+  
+  <!-- Second Modal -->
+  
+  <div class="modal-content modal_2"> 
+  <div class="modal-body">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis dapibus molestie orci, nec ultricies nulla luctus dignissim. In vitae nibh eget mauris consectetur tristique. Donec ornare eleifend neque ut tincidunt. Etiam augue odio, tempus vel placerat id, imperdiet vitae justo. Fusce sit amet risus est. Vestibulum at hendrerit ante. Nunc quis augue risus. Pellentesque non turpis justo. Vestibulum porttitor erat eget egestas eleifend. Fusce nec lectus non turpis fringilla mattis in non diam  
+  </div> 
+  <div class="modal-footer">
+  <button class="close-modal">Close</button>
+      <button class="close-modal">OK</button>  
+  </div> 
+</div>  
+  </div>
+  </main>
+  </body>
+<script src="modal.js"></script>
+</html>

@@ -1,0 +1,116 @@
+body {
+  overflow: hidden;
+  background-image: url('bg.jpg');
+  background-size:fill;
+}
+main {
+    display: grid;
+    place-items: center;
+  }
+  h1 {
+    font-family:Terminal;
+    font-weight : 300;
+    color : white;
+    text-align: center;
+  background: #222;
+  width:100%;
+  padding: 1rem;
+  margin-bottom: 8.5rem;
+  }
+  
+  .open-modal {
+      
+    height: 50px;
+    width: 150px;
+    display: block;
+    margin: 10px auto;
+    border: 1px solid white;
+    background-color: rgb(24, 112, 36);
+    color: white;
+    font-family: Terminal;;
+    font-weight: 800;
+    transition: 500ms;
+    cursor: pointer;
+    outline: none;
+  }
+    .open-modal:hover {
+      background-color: white;
+      color: rgb(24, 112, 36);
+    }
+  
+  .modal-dialog {
+    position: absolute;
+    min-height: 100%;
+    min-width: 100%;
+  }
+  .modal-content {
+    font-family: Terminal;;
+    font-size: 14px;
+    background-color: white;
+    z-index: 2;
+    will-change: transform;
+    position: absolute;
+    top: 40px;
+    left: 50%;
+    margin-left: -225px;
+    width: 450px;
+    height: auto;
+    transform: scaleX(0);
+    opacity: 0;
+    border: 1px solid #cecece;
+    transition: all 300ms cubic-bezier(0.72, 0.91, 0.35, 1.2);
+  }
+    .modal-body {
+      height: 200px;
+      padding: 15px;
+      overflow: auto;
+    }
+    .modal-footer {
+      height: 60px;
+      width: 100%;
+      text-align: center;
+      line-height: 4.5;
+      border-top: 1px solid #cecece;}
+      .modal-footer button {
+        font-family: Terminal;
+        margin: 10px;
+        height: 35px;
+        width: 80px;
+        background-color: rgb(24, 112, 36);
+        color: white;
+        border: none;
+        outline: none;
+        cursor: pointer;
+        transition: 500ms;}
+    .modal-footer button:hover {
+          background-color: white;
+          border: 1px solid rgb(24, 112, 36);
+          color: rgb(24, 112, 36);
+        }
+
+/* Class Utils Modal*/
+
+.opened {
+    margin-top: 6.5rem;
+  transform: scaleX(1) !important;
+  opacity: 1 !important;
+}
+
+.closed {
+    margin-bottom: 9.5rem;
+  transform: scaleX(0) !important;;
+  opacity: 0 !important;
+}
+
+/* Scrollbar Color*/
+.modal-body::-webkit-scrollbar {
+  width: .5em;
+}
+
+.modal-body::-webkit-scrollbar-track {
+  background-color: rgba(206, 206, 206, 0.5);
+}
+
+.modal-body::-webkit-scrollbar-thumb {
+  background-color: rgb(24, 112, 36);
+}
