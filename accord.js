@@ -1,5 +1,6 @@
 var accordions = document.getElementsByClassName("accordion");
-  for (var i = 0; i < accordions.length; i++) 
+ 
+for (var i = 0; i < accordions.length; i++) 
   {
       accordions[i].onclick = function() 
       {

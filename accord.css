@@ -1,5 +1,5 @@
 body {
-        background-image:url('bg.jpg');
+        background-image:url('bg1.jpg');
         background-size: cover;
      }
    h1
@@ -48,7 +48,6 @@ body {
      color:#fff;
      border: 2px solid white;
    }
-    
    .accordion-content
     {
      background-color: rgb(240, 226, 210);
