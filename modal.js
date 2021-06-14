@@ -41,8 +41,7 @@
     }
     window.Modal = Modal;
   }(window));
-  
-  /* Plugin */
+
   let b1 = document.querySelector('.modal-1');
   let b2 = document.querySelector('.modal-2');
   
