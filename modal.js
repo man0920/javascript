@@ -1,6 +1,5 @@
 ;(function(window) {
     'use strict';
-  
     function Modal(button, config) {
       let $element = document.querySelector(config.content);
       let body = document.body;
