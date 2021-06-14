@@ -3,8 +3,7 @@ body {
   background-image: url('bg.jpg');
   background-size:fill;
 }
-main 
-{
+main {
     display: grid;
     place-items: center;
   }
